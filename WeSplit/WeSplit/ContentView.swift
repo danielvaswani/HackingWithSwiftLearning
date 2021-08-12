@@ -16,7 +16,9 @@ struct ContentView: View {
     let tipPercentages = [10, 15, 20, 25, 0]
     
     var totalPerPerson: Double {
-        let peopleCount = Double(numberOfPeople + 2)
+        //Challenge 3 Change Picker to TextField (Picker subtracts 2)
+//        let peopleCount = Double(numberOfPeople + 2)
+        let peopleCount = Double(numberOfPeople)
         let tipSelection = Double(tipPercentages[tipPercentage])
         let orderAmount = Double(checkAmount) ?? 0
         
@@ -26,6 +28,15 @@ struct ContentView: View {
 
         return amountPerPerson
     }
+    // Challenge 2 add total
+    var total : Double {
+        let orderAmount = Double(checkAmount) ?? 0
+        let tipSelection = Double(tipPercentages[tipPercentage])
+        let tipValue = orderAmount / 100 * tipSelection
+        let grandTotal = orderAmount + tipValue
+        
+        return grandTotal
+    }
     
     var body: some View {
         NavigationView {
@@ -33,12 +44,13 @@ struct ContentView: View {
                 Section {
                     TextField("Amount", text: $checkAmount)
                         .keyboardType(.decimalPad)
-                    
-                    Picker("Number of people", selection: $numberOfPeople) {
-                           ForEach(2 ..< 100) {
-                               Text("\($0) people")
-                           }
-                       }
+                    //Challenge 3 Change from Picker to TextField
+                    TextField("Number of people", value: $numberOfPeople, formatter: NumberFormatter())
+//                    Picker("Number of people", selection: $numberOfPeople){
+//                           ForEach(2 ..< 100) {
+//                               Text("\($0) people")
+//                           }
+//                       }
                 }
                 
                 Section (header:Text("How much tip do you want to leave?")){
@@ -51,11 +63,14 @@ struct ContentView: View {
                     }
                     .pickerStyle(SegmentedPickerStyle())
                 }
-                
+                // Challenge 1 add header "Amount per person"
                 Section (header: Text("Amount per person")){
                     Text("$\(totalPerPerson, specifier: "%.2f")")
                 }
-                
+                // Challenge 2 add new section for total
+                Section(header: Text("Total")){
+                    Text("$\(total, specifier: "%.2f")")
+                }
             }
             .navigationBarTitle("WeSplit")
         }
