@@ -70,6 +70,8 @@ struct ContentView: View {
                 // Challenge 2 add new section for total
                 Section(header: Text("Total")){
                     Text("$\(total, specifier: "%.2f")")
+                        .foregroundColor(tipPercentages[tipPercentage] == 0 ? Color.red : Color.primary)
+                    //Challenge 2 (Views and Modifiers Project) Conditional color that checks if user tips 0
                 }
             }
             .navigationBarTitle("WeSplit")
