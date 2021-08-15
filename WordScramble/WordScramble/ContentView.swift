@@ -16,6 +16,13 @@ struct ContentView: View {
     @State private var errorMessage = ""
     @State private var showingError = false
     
+    //Challenge 3 compute score somehow
+    var score : Int {
+        // no of words * sum letter count of them
+        usedWords.count
+            * usedWords.reduce(0) { $0 + $1.count}
+    }
+    
         var body: some View {
             NavigationView {
                 VStack {
@@ -24,15 +31,24 @@ struct ContentView: View {
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .padding()
                     
+                    
+                    
                     List(usedWords, id: \.self) {
                         Image(systemName: "\($0.count).circle")
                         Text($0)
                     }
-                    .navigationBarTitle(rootWord)
-                    .onAppear(perform: startGame)
-                    .alert(isPresented: $showingError) {
-                        Alert(title: Text(errorTitle), message: Text(errorMessage), dismissButton: .default(Text("OK")))
-                    }
+                    
+                    // Challenge 3 compute score
+                    Text("You have a score of \(score)!")
+                }
+                .navigationBarTitle(rootWord)
+                // Challenge 2 Button to start new game
+                .navigationBarItems(leading:
+                    Button(action : startGame) { Text("New Game")}
+                )
+                .onAppear(perform: startGame)
+                .alert(isPresented: $showingError) {
+                    Alert(title: Text(errorTitle), message: Text(errorMessage), dismissButton: .default(Text("OK")))
                 }
             }
         }
@@ -58,6 +74,11 @@ struct ContentView: View {
         }
         
         guard answer.count > 0 else {
+            return
+        }
+        
+        //Challenge 1 Part 2 check if word is not the same as rootWord
+        guard answer != rootWord else {
             return
         }
         
@@ -100,7 +121,9 @@ struct ContentView: View {
         let range = NSRange(location: 0, length: word.utf16.count)
         let misspelledRange = checker.rangeOfMisspelledWord(in: word, range: range, startingAt: 0, wrap: false, language: "en")
 
-        return misspelledRange.location == NSNotFound
+        //Challenge 1 Part 1 Only commit if word length is longer than 4 chars and has no spelling mistakes
+        
+        return word.count > 3 && misspelledRange.location == NSNotFound
     }
     
     func wordError(title: String, message: String) {
