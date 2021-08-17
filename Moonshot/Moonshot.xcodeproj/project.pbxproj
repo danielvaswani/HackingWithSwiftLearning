@@ -1,0 +1,502 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F689F12B26CBE25500CA4C99 /* MoonshotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F689F11826CBE25300CA4C99 /* MoonshotApp.swift */; };
+		F689F12C26CBE25500CA4C99 /* MoonshotApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F689F11826CBE25300CA4C99 /* MoonshotApp.swift */; };
+		F689F12D26CBE25500CA4C99 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F689F11926CBE25300CA4C99 /* ContentView.swift */; };
+		F689F12E26CBE25500CA4C99 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F689F11926CBE25300CA4C99 /* ContentView.swift */; };
+		F689F12F26CBE25500CA4C99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F689F11A26CBE25500CA4C99 /* Assets.xcassets */; };
+		F689F13026CBE25500CA4C99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F689F11A26CBE25500CA4C99 /* Assets.xcassets */; };
+		F689F13A26CBEADB00CA4C99 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F689F13926CBEADB00CA4C99 /* Bundle-Decodable.swift */; };
+		F689F13B26CBEADB00CA4C99 /* Bundle-Decodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = F689F13926CBEADB00CA4C99 /* Bundle-Decodable.swift */; };
+		F68E1E2C26CBEBAC00F75BB4 /* astronauts.json in Resources */ = {isa = PBXBuildFile; fileRef = F68E1E2B26CBEBAC00F75BB4 /* astronauts.json */; };
+		F68E1E2D26CBEBAC00F75BB4 /* astronauts.json in Resources */ = {isa = PBXBuildFile; fileRef = F68E1E2B26CBEBAC00F75BB4 /* astronauts.json */; };
+		F68E1E2F26CBEBF200F75BB4 /* Astronaut.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68E1E2E26CBEBF200F75BB4 /* Astronaut.swift */; };
+		F68E1E3026CBEBF200F75BB4 /* Astronaut.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68E1E2E26CBEBF200F75BB4 /* Astronaut.swift */; };
+		F68E1E3326CBEC2600F75BB4 /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68E1E3226CBEC2600F75BB4 /* Mission.swift */; };
+		F68E1E3426CBEC2600F75BB4 /* Mission.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68E1E3226CBEC2600F75BB4 /* Mission.swift */; };
+		F68E1E3626CBEDCB00F75BB4 /* missions.json in Resources */ = {isa = PBXBuildFile; fileRef = F68E1E3526CBEDCB00F75BB4 /* missions.json */; };
+		F68E1E3726CBEDCB00F75BB4 /* missions.json in Resources */ = {isa = PBXBuildFile; fileRef = F68E1E3526CBEDCB00F75BB4 /* missions.json */; };
+		F68E1E3A26CBF05A00F75BB4 /* MissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68E1E3926CBF05A00F75BB4 /* MissionView.swift */; };
+		F68E1E3B26CBF05A00F75BB4 /* MissionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68E1E3926CBF05A00F75BB4 /* MissionView.swift */; };
+		F68E1E3D26CC000E00F75BB4 /* AstronautView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68E1E3C26CC000E00F75BB4 /* AstronautView.swift */; };
+		F68E1E3E26CC000E00F75BB4 /* AstronautView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F68E1E3C26CC000E00F75BB4 /* AstronautView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F689F11826CBE25300CA4C99 /* MoonshotApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoonshotApp.swift; sourceTree = "<group>"; };
+		F689F11926CBE25300CA4C99 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F689F11A26CBE25500CA4C99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F689F11F26CBE25500CA4C99 /* Moonshot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moonshot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F689F12226CBE25500CA4C99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F689F12726CBE25500CA4C99 /* Moonshot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Moonshot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F689F12926CBE25500CA4C99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F689F12A26CBE25500CA4C99 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		F689F13926CBEADB00CA4C99 /* Bundle-Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle-Decodable.swift"; sourceTree = "<group>"; };
+		F68E1E2B26CBEBAC00F75BB4 /* astronauts.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = astronauts.json; sourceTree = "<group>"; };
+		F68E1E2E26CBEBF200F75BB4 /* Astronaut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Astronaut.swift; sourceTree = "<group>"; };
+		F68E1E3226CBEC2600F75BB4 /* Mission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mission.swift; sourceTree = "<group>"; };
+		F68E1E3526CBEDCB00F75BB4 /* missions.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = missions.json; sourceTree = "<group>"; };
+		F68E1E3926CBF05A00F75BB4 /* MissionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MissionView.swift; sourceTree = "<group>"; };
+		F68E1E3C26CC000E00F75BB4 /* AstronautView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronautView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F689F11C26CBE25500CA4C99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F689F12426CBE25500CA4C99 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F689F11226CBE25300CA4C99 = {
+			isa = PBXGroup;
+			children = (
+				F689F11726CBE25300CA4C99 /* Shared */,
+				F689F12126CBE25500CA4C99 /* iOS */,
+				F689F12826CBE25500CA4C99 /* macOS */,
+				F689F12026CBE25500CA4C99 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F689F11726CBE25300CA4C99 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				F68E1E3826CBF04900F75BB4 /* View */,
+				F68E1E3126CBEC0A00F75BB4 /* Model */,
+				F689F11826CBE25300CA4C99 /* MoonshotApp.swift */,
+				F689F13926CBEADB00CA4C99 /* Bundle-Decodable.swift */,
+				F689F11A26CBE25500CA4C99 /* Assets.xcassets */,
+				F68E1E2B26CBEBAC00F75BB4 /* astronauts.json */,
+				F68E1E3526CBEDCB00F75BB4 /* missions.json */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		F689F12026CBE25500CA4C99 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F689F11F26CBE25500CA4C99 /* Moonshot.app */,
+				F689F12726CBE25500CA4C99 /* Moonshot.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F689F12126CBE25500CA4C99 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				F689F12226CBE25500CA4C99 /* Info.plist */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
+		F689F12826CBE25500CA4C99 /* macOS */ = {
+			isa = PBXGroup;
+			children = (
+				F689F12926CBE25500CA4C99 /* Info.plist */,
+				F689F12A26CBE25500CA4C99 /* macOS.entitlements */,
+			);
+			path = macOS;
+			sourceTree = "<group>";
+		};
+		F68E1E3126CBEC0A00F75BB4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F68E1E2E26CBEBF200F75BB4 /* Astronaut.swift */,
+				F68E1E3226CBEC2600F75BB4 /* Mission.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F68E1E3826CBF04900F75BB4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F689F11926CBE25300CA4C99 /* ContentView.swift */,
+				F68E1E3926CBF05A00F75BB4 /* MissionView.swift */,
+				F68E1E3C26CC000E00F75BB4 /* AstronautView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F689F11E26CBE25500CA4C99 /* Moonshot (iOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F689F13326CBE25500CA4C99 /* Build configuration list for PBXNativeTarget "Moonshot (iOS)" */;
+			buildPhases = (
+				F689F11B26CBE25500CA4C99 /* Sources */,
+				F689F11C26CBE25500CA4C99 /* Frameworks */,
+				F689F11D26CBE25500CA4C99 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Moonshot (iOS)";
+			productName = "Moonshot (iOS)";
+			productReference = F689F11F26CBE25500CA4C99 /* Moonshot.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F689F12626CBE25500CA4C99 /* Moonshot (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F689F13626CBE25500CA4C99 /* Build configuration list for PBXNativeTarget "Moonshot (macOS)" */;
+			buildPhases = (
+				F689F12326CBE25500CA4C99 /* Sources */,
+				F689F12426CBE25500CA4C99 /* Frameworks */,
+				F689F12526CBE25500CA4C99 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Moonshot (macOS)";
+			productName = "Moonshot (macOS)";
+			productReference = F689F12726CBE25500CA4C99 /* Moonshot.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F689F11326CBE25300CA4C99 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				TargetAttributes = {
+					F689F11E26CBE25500CA4C99 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+					F689F12626CBE25500CA4C99 = {
+						CreatedOnToolsVersion = 12.5.1;
+					};
+				};
+			};
+			buildConfigurationList = F689F11626CBE25300CA4C99 /* Build configuration list for PBXProject "Moonshot" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F689F11226CBE25300CA4C99;
+			productRefGroup = F689F12026CBE25500CA4C99 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F689F11E26CBE25500CA4C99 /* Moonshot (iOS) */,
+				F689F12626CBE25500CA4C99 /* Moonshot (macOS) */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F689F11D26CBE25500CA4C99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F689F12F26CBE25500CA4C99 /* Assets.xcassets in Resources */,
+				F68E1E3626CBEDCB00F75BB4 /* missions.json in Resources */,
+				F68E1E2C26CBEBAC00F75BB4 /* astronauts.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F689F12526CBE25500CA4C99 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F689F13026CBE25500CA4C99 /* Assets.xcassets in Resources */,
+				F68E1E3726CBEDCB00F75BB4 /* missions.json in Resources */,
+				F68E1E2D26CBEBAC00F75BB4 /* astronauts.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F689F11B26CBE25500CA4C99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F68E1E3D26CC000E00F75BB4 /* AstronautView.swift in Sources */,
+				F689F12D26CBE25500CA4C99 /* ContentView.swift in Sources */,
+				F689F12B26CBE25500CA4C99 /* MoonshotApp.swift in Sources */,
+				F689F13A26CBEADB00CA4C99 /* Bundle-Decodable.swift in Sources */,
+				F68E1E3326CBEC2600F75BB4 /* Mission.swift in Sources */,
+				F68E1E2F26CBEBF200F75BB4 /* Astronaut.swift in Sources */,
+				F68E1E3A26CBF05A00F75BB4 /* MissionView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F689F12326CBE25500CA4C99 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F68E1E3E26CC000E00F75BB4 /* AstronautView.swift in Sources */,
+				F689F12E26CBE25500CA4C99 /* ContentView.swift in Sources */,
+				F689F12C26CBE25500CA4C99 /* MoonshotApp.swift in Sources */,
+				F689F13B26CBEADB00CA4C99 /* Bundle-Decodable.swift in Sources */,
+				F68E1E3426CBEC2600F75BB4 /* Mission.swift in Sources */,
+				F68E1E3026CBEBF200F75BB4 /* Astronaut.swift in Sources */,
+				F68E1E3B26CBF05A00F75BB4 /* MissionView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		F689F13126CBE25500CA4C99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F689F13226CBE25500CA4C99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		F689F13426CBE25500CA4C99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B75B8HZMUH;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = daniel.Moonshot;
+				PRODUCT_NAME = Moonshot;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F689F13526CBE25500CA4C99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = B75B8HZMUH;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = iOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = daniel.Moonshot;
+				PRODUCT_NAME = Moonshot;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F689F13726CBE25500CA4C99 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = B75B8HZMUH;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = daniel.Moonshot;
+				PRODUCT_NAME = Moonshot;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F689F13826CBE25500CA4C99 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = B75B8HZMUH;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = macOS/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.0;
+				PRODUCT_BUNDLE_IDENTIFIER = daniel.Moonshot;
+				PRODUCT_NAME = Moonshot;
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F689F11626CBE25300CA4C99 /* Build configuration list for PBXProject "Moonshot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F689F13126CBE25500CA4C99 /* Debug */,
+				F689F13226CBE25500CA4C99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F689F13326CBE25500CA4C99 /* Build configuration list for PBXNativeTarget "Moonshot (iOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F689F13426CBE25500CA4C99 /* Debug */,
+				F689F13526CBE25500CA4C99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F689F13626CBE25500CA4C99 /* Build configuration list for PBXNativeTarget "Moonshot (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F689F13726CBE25500CA4C99 /* Debug */,
+				F689F13826CBE25500CA4C99 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F689F11326CBE25300CA4C99 /* Project object */;
+}
