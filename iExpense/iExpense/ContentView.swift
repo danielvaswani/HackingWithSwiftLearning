@@ -41,10 +41,25 @@ struct AddView: View {
     @State private var type = "Personal"
     @State private var amount = ""
     
+    @State private var showingAlert = false
+    
     @ObservedObject var expenses: Expenses
     @Environment(\.presentationMode) var presentationMode
     
     static let types = ["Business", "Personal"]
+    
+    // Challenge 3 Add Validation and Alert for
+    // amount. It should be a valid Int
+    func saveAmount(){
+        if let actualAmount = Int(self.amount) {
+            let item = ExpenseItem(name: self.name, type: self.type, amount: actualAmount)
+            self.expenses.items.append(item)
+            self.presentationMode.wrappedValue.dismiss()
+        }
+        else {
+            self.showingAlert.toggle()
+        }
+    }
     
     var body: some View {
         NavigationView {
@@ -59,13 +74,12 @@ struct AddView: View {
                     .keyboardType(.numberPad)
             }
             .navigationBarTitle("Add new expense")
-            .navigationBarItems(trailing: Button("Save") {
-                if let actualAmount = Int(self.amount) {
-                    let item = ExpenseItem(name: self.name, type: self.type, amount: actualAmount)
-                    self.expenses.items.append(item)
-                }
-                self.presentationMode.wrappedValue.dismiss()
-            })
+            // Challenge 3 Add Validation and Alert for
+            // amount. It should be a valid Int
+            .navigationBarItems(trailing: Button("Save", action: saveAmount))
+            .alert(isPresented: $showingAlert){
+                Alert(title: Text("Please try again."), message: Text("Enter a valid number"), dismissButton: .default(Text("Okay")))
+            }
         }
     }
 }
@@ -84,6 +98,11 @@ struct ContentView : View {
         expenses.items.remove(atOffsets: offsets)
     }
     
+    // Challenge 2 Fonts style for different amounts
+    func getAmountStyle(for amount : Int) -> Font{
+        (amount > 100) ? Font.title2.bold() : (amount > 10 ? Font.title3.weight(.medium) : (Font.body.weight(.light)))
+    }
+    
     var body : some View {
         NavigationView {
             List {
@@ -96,14 +115,20 @@ struct ContentView : View {
                         }
                         
                         Spacer()
+                        // Challenge 2 Fonts style for different amounts
                         Text("$\(item.amount)")
+                            .font(getAmountStyle(for: item.amount))
                     }
                 }
                 .onDelete(perform: removeItems)
                 
             }
             .navigationBarTitle("iExpense")
-            .navigationBarItems(trailing:
+            .navigationBarItems(
+                // Challenge 1 Edit/Done Feature
+                leading: EditButton(),
+                
+                trailing:
                                     Button(action: {
                                         //                    let expense = ExpenseItem(name: "Test", type: "Personal", amount: 5)
                                         //                    self.expenses.items.append(expense)
@@ -118,6 +143,8 @@ struct ContentView : View {
         }
     }
 }
+
+// Not part of app code but for learning
 
 struct User: Codable {
     var firstName: String
