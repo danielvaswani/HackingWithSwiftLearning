@@ -42,7 +42,8 @@ struct MissionView: View {
                         .scaledToFit()
                         .frame(maxWidth: geometry.size.width * 0.7)
                         .padding(.top)
-                    
+                    //Challenge 1 Launch date under mission badge
+                    Text(self.mission.formattedLaunchDate)
                     Text(self.mission.description)
                         .padding()
                     ForEach(self.astronauts, id: \.role) { crewMember in

@@ -15,6 +15,29 @@ struct ContentView : View {
     
     let missions : [Mission] = Bundle.main.decode("missions.json")
     
+    //Challenge 3 show names or date
+    @State private var showingNames = false
+    
+    
+    //Challenge 3 show names or date
+    func getFormattedNames(mission : Mission) -> String {
+        var shortNames = [String]()
+        var formattedString = ""
+        
+        for member in mission.crew {
+            shortNames.append(member.name)
+            for man in astronauts {
+                if man.id == member.name{
+                    formattedString += man.name
+                }
+                
+            }
+            formattedString += ", "
+        }
+        
+        return String(formattedString.dropLast(2))
+    }
+    
     var body : some View {
         NavigationView {
             List(missions) { mission in
@@ -27,11 +50,16 @@ struct ContentView : View {
                     VStack(alignment: .leading) {
                         Text(mission.displayName)
                             .font(.headline)
-                        Text(mission.formattedLaunchDate)
+                        //Challenge 3 show names or date
+                        ScrollView(.horizontal, showsIndicators: false) {
+                            Text(showingNames ? getFormattedNames(mission: mission) : mission.formattedLaunchDate)
+                        }
                     }
                 }
             }
             .navigationBarTitle("Moonshot")
+            //Challenge 3 show names or date
+            .navigationBarItems(trailing: Button(showingNames ? "Show Dates" : "Show Names"){ self.showingNames.toggle()})
         }
     }
 }
